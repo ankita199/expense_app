@@ -5,9 +5,9 @@ const ExpenseForm = (props) => {
   const [enteredAmount, setEnteredAmount] = useState('2.99');
   const [enteredDate, setEnteredDate] = useState(new Date(2021, 5, 12));
   const handleChange = (identifier, value) => {
-    if (identifier == 'title') {
+    if (identifier === 'title') {
       setEnteredTitle(value);
-    } else if (identifier == 'amount') {
+    } else if (identifier === 'amount') {
       setEnteredAmount(value)
     } else {
       setEnteredDate(value);
